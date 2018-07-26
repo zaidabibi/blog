@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Algorithm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Algorithm</h1>
+      <p>The journey to self discovery.</p>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"> <img src="images/logo.jpg" alt="" width="50px" height="40px"  > </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="archive">Archive</a></li>
+          <li><a href="create">New Post</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container">
+<div class="row">
+
+  <div class="container">
+      <h2>Welcome to Algorithm</h2>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">More about us</button>
+  <div id="demo" class="collapse">
+    <p class="text-center">Being a coder has taught me many things , it has made me realise that there is a world of possibilities waiting to be explored.In my blog i will give you the inside scoop on what it is like to be a coder and also go against the grain of the typical programmer stereotype , during this journey we will learn how to properly care for our body and mind , in order for us to function optimally..Enjoy</p>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+  <div class="panel-heading">
+    <h3 class="panel-title"><h3><%= posts.title %></h3></h3>
+  </div>
+  <div class="panel-body">
+        <p>Author: <%= posts.author%></p>
+           <p>Date: <%= posts.date%></p>
+           <p>Content:</p> <%- posts.content2%>
+           <img src="<%= posts.image %>"  width="100%">
+           <button class="btn btn-primary" type="button" name="button">Edit</button>
+           <button class="btn btn-primary" type="button" name="button">Delete</button>
+ </div>
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="newsletter-subscribe">
+    <div class="container">
+      <div class="intro">
+        <h3 class="text-center">Subscribe to our newsletter.</h3>
+        <p class="text-center">To keep up to date with the latest trends and posts.</p>
+      </div>
+    <form class="form-inline"  method="post">
+    <div class="form-group">
+    <input class="form-control" type="email" name="email" placeholder="Your email address">
+    </div>
+    <div class="form-group">
+    <button class="btn btn-primary" type="submit"> Submit </button>
+    </div>
+    </form>
+    </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid bg-4 text-center">
+  <p>Live life to the fullest <a href="#">,Always</a></p>
+</footer>
+
+</div>
+</body>
+</html>
